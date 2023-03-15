@@ -9,6 +9,7 @@ users = [{'name': 'Phil', 'birthday': '18-03-1995'},
          {'name': 'Jan', 'birthday': '21-03-1973'}]
 
 def get_birthdays_per_week(users: list):
+         
     today = datetime.now()
     cur_day = today.replace(hour=0, minute=0, second=0, microsecond=0)
     cur_year = today.year
@@ -28,7 +29,8 @@ def get_birthdays_per_week(users: list):
     
     for day in result:
         print (f"{day}: {', '.join(result[day])}")
-        
+    
+         
 if __name__ == '__main__':
             
     get_birthdays_per_week(users)
